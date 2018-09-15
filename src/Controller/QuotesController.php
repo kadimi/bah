@@ -36,8 +36,6 @@ class QuotesController extends AbstractController
     		->getForm()
 		;
 
-        var_dump($form); die();
-
         return $this->render('quotes/new.html.twig', array(
             'form' => $form->createView(),
             'controller_name' => 'QuotesController',
