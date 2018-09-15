@@ -15,8 +15,6 @@
 /.web-server-pid
 ###< symfony/web-server-bundle ###
 
-/node_modules/
-
 ###> symfony/webpack-encore-pack ###
 /node_modules/
 /public/build/
