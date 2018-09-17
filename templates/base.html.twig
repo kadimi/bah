@@ -2,11 +2,23 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link rel="stylesheet" type="text/css" href="{{ asset('build/app.css') }}">
+        {% endblock %}
     </head>
     <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">One of three columns</div>
+                <div class="col-sm">One of three columns</div>
+                <div class="col-sm">One of three columns</div>
+            </div>
+        </div>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+          <script type="text/javascript" src="{{ asset('build/app.js') }}"></script>
+        {% endblock %}
     </body>
 </html>
